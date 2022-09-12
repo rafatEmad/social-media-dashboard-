@@ -1,0 +1,123 @@
+
+@mixin dark-theme {
+    .header{
+        margin-left: 10em;
+        margin-right: 10em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        display: flex;
+        justify-content: space-between;
+    
+        .title{
+            color: $White;
+            font-weight: 700;
+            font-size: 22px;
+            letter-spacing: 0.3;
+        }
+        .dis{
+            color: $White;
+            letter-spacing: 0.3;
+        }
+       
+       
+    }
+    
+    .scIcon{
+        margin-left: 10em;
+        margin-right: 10em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .face{
+        width: 240px;
+        height: 200px;
+        background-color: $DarkDesaturatedBlue;
+        border-radius: 4px;
+        border-top: 3px  $Facebook solid;
+        padding: 10px;
+    
+        .icon{
+            width: 100%;
+            display: flex;
+            padding: 10px 15px;
+            justify-content: center;
+            font-size: 12px;
+            color: $White;
+            img{
+                margin-right: 10px;
+            }
+        
+        }
+        .flowNum{
+            font-size: 50px;
+            text-align: center;
+            font-weight: 700;
+            color: $White;
+        }
+        .folowers{
+            color: $DesaturatedBlue;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            font-size: 10px;
+            padding: 10px;
+            
+        }
+    
+        .today{
+            text-align: center;
+            font-size: 12px;
+            color: $LimeGreen;
+            padding: 10px;
+            sub{
+                font-weight: 900;
+            }
+        }
+    }
+    
+    .overview-cards{
+        margin-left: 10em;
+        margin-right: 10em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 240px;
+        height: 100px;
+        background-color: $DarkDesaturatedBlue;
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 15px;
+    
+        .ssHead{
+            display: flex;
+            justify-content: space-between;
+            .sstitle{
+                color: $Toggle;
+            }
+        }
+        .ssfooter{
+            margin-top: 1.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .flowNum1{
+                color: $White;
+                font-size: 30px;
+                font-weight: 700;
+            }
+            .porc{
+                color: $LimeGreen;
+            }
+            .porc2{
+                color: $BrightRed;
+            }
+        }   
+    
+    }        
+}
